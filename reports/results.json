@@ -1,0 +1,1629 @@
+{
+  "cases": 13087,
+  "cases_with_complete_events": 13087,
+  "complete_events": 164506,
+  "distinct_variants": 4336,
+  "top_variants": [
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_DECLINED"
+      ],
+      "cases": 3429,
+      "median_observed_hours": 0.01050777773062388
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_DECLINED",
+        "W_Afhandelen leads"
+      ],
+      "cases": 1872,
+      "median_observed_hours": 0.8393961111042234
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "W_Afhandelen leads",
+        "A_DECLINED",
+        "W_Afhandelen leads"
+      ],
+      "cases": 271,
+      "median_observed_hours": 2.0911891666385864
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Afhandelen leads",
+        "A_DECLINED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 209,
+      "median_observed_hours": 2.6603686110840905
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "A_DECLINED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 160,
+      "median_observed_hours": 1.6094290278024144
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "A_CANCELLED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 134,
+      "median_observed_hours": 2.142801805569066
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag",
+        "A_DECLINED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 126,
+      "median_observed_hours": 15.839345277779632
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Completeren aanvraag",
+        "A_DECLINED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 93,
+      "median_observed_hours": 5.690889166659779
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Completeren aanvraag",
+        "A_CANCELLED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 89,
+      "median_observed_hours": 11.41366861111588
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag",
+        "W_Completeren aanvraag",
+        "A_DECLINED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 74,
+      "median_observed_hours": 21.632534722189106
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "A_PREACCEPTED",
+        "W_Completeren aanvraag",
+        "W_Completeren aanvraag",
+        "A_CANCELLED",
+        "W_Completeren aanvraag"
+      ],
+      "cases": 63,
+      "median_observed_hours": 21.13937888893816
+    },
+    {
+      "activities": [
+        "A_SUBMITTED",
+        "A_PARTLYSUBMITTED",
+        "W_Afhandelen leads",
+        "W_Afhandelen leads",
+        "A_DECLINED",
+        "W_Afhandelen leads"
+      ],
+      "cases": 58,
+      "median_observed_hours": 3.558159583310286
+    }
+  ],
+  "repeated_activity_case_rate": 0.5363337663330022,
+  "illustrative_sla": {
+    "hours": 168,
+    "resolved_cases": 12688,
+    "unresolved_or_censored": 399,
+    "breaches": 4997,
+    "breach_rate": 0.39383669609079447,
+    "terminal_definitions": [
+      "A_ACTIVATED",
+      "A_CANCELLED",
+      "A_DECLINED"
+    ]
+  },
+  "temporal": {
+    "cutoff": 1326963861.3356,
+    "training_cases": 8332,
+    "test_cases": 3926,
+    "embargoed_overlapping_cases": 829,
+    "train_last_event": 1326963782.287,
+    "test_first_event": 1326964333.942
+  },
+  "conformance": {
+    "reference": "Empirical directly-follows support, not a normative process model",
+    "training_min_edge_support": 5,
+    "test_cases_with_rare_or_unseen_edges": 16,
+    "test_case_deviation_rate": 0.004075394803871625,
+    "illustrative_precedence_violation_cases": 0,
+    "rules": {
+      "A_FINALIZED": "A_ACCEPTED",
+      "A_ACTIVATED": "A_APPROVED",
+      "O_SENT": "O_CREATED"
+    }
+  },
+  "edges": [
+    {
+      "source": "W_Nabellen offertes",
+      "target": "W_Nabellen offertes",
+      "count": 3209,
+      "median_elapsed_hours": 50.969726111094154,
+      "p90_elapsed_hours": 189.91481338890398,
+      "total_elapsed_hours": 259707.3831461111,
+      "training_count": 7588,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "W_Completeren aanvraag",
+      "count": 3919,
+      "median_elapsed_hours": 6.4957902777857255,
+      "p90_elapsed_hours": 57.943727777746005,
+      "total_elapsed_hours": 117155.17140944513,
+      "training_count": 6673,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "W_Nabellen offertes",
+      "count": 1056,
+      "median_elapsed_hours": 0.16670513888200122,
+      "p90_elapsed_hours": 193.58023041665552,
+      "total_elapsed_hours": 75016.67463333323,
+      "training_count": 1979,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "O_SENT_BACK",
+      "count": 796,
+      "median_elapsed_hours": 91.5992711111241,
+      "p90_elapsed_hours": 168.58597902774812,
+      "total_elapsed_hours": 74810.4791305562,
+      "training_count": 1513,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 2217,
+      "median_elapsed_hours": 3.186615555551317,
+      "p90_elapsed_hours": 46.02336777781116,
+      "total_elapsed_hours": 34972.55314916624,
+      "training_count": 4497,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "W_Valideren aanvraag",
+      "count": 616,
+      "median_elapsed_hours": 45.29195666667488,
+      "p90_elapsed_hours": 121.36906624999311,
+      "total_elapsed_hours": 31961.522691667014,
+      "training_count": 1185,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "O_SENT_BACK",
+      "count": 166,
+      "median_elapsed_hours": 142.5444159722328,
+      "p90_elapsed_hours": 186.1820459722148,
+      "total_elapsed_hours": 21665.378302222824,
+      "training_count": 355,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "O_CANCELLED",
+      "count": 273,
+      "median_elapsed_hours": 17.01982805556721,
+      "p90_elapsed_hours": 171.03941433333028,
+      "total_elapsed_hours": 15539.403938055437,
+      "training_count": 622,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "A_CANCELLED",
+      "count": 151,
+      "median_elapsed_hours": 24.3189875000053,
+      "p90_elapsed_hours": 167.72377555555767,
+      "total_elapsed_hours": 9427.813918611075,
+      "training_count": 447,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PREACCEPTED",
+      "target": "W_Completeren aanvraag",
+      "count": 917,
+      "median_elapsed_hours": 5.3985641666915685,
+      "p90_elapsed_hours": 23.13774788890944,
+      "total_elapsed_hours": 9042.145463332865,
+      "training_count": 1557,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "A_CANCELLED",
+      "count": 277,
+      "median_elapsed_hours": 0.7376302778058582,
+      "p90_elapsed_hours": 90.13889055559399,
+      "total_elapsed_hours": 7185.332236110899,
+      "training_count": 582,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "A_ACCEPTED",
+      "count": 900,
+      "median_elapsed_hours": 1.1046044444375567,
+      "p90_elapsed_hours": 20.19538761109114,
+      "total_elapsed_hours": 7039.982771667243,
+      "training_count": 1450,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "W_Valideren aanvraag",
+      "count": 547,
+      "median_elapsed_hours": 0.8144016666544809,
+      "p90_elapsed_hours": 29.3303819444312,
+      "total_elapsed_hours": 7015.022305555278,
+      "training_count": 982,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "O_CANCELLED",
+      "count": 166,
+      "median_elapsed_hours": 0.0429081944293446,
+      "p90_elapsed_hours": 169.84185625000134,
+      "total_elapsed_hours": 6675.044784444173,
+      "training_count": 242,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "O_ACCEPTED",
+      "count": 83,
+      "median_elapsed_hours": 52.80878500004609,
+      "p90_elapsed_hours": 142.87042827777069,
+      "total_elapsed_hours": 5329.9782161112635,
+      "training_count": 235,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "O_SELECTED",
+      "count": 116,
+      "median_elapsed_hours": 0.700874166654216,
+      "p90_elapsed_hours": 138.73111930555768,
+      "total_elapsed_hours": 4562.007334444655,
+      "training_count": 199,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PARTLYSUBMITTED",
+      "target": "A_PREACCEPTED",
+      "count": 2128,
+      "median_elapsed_hours": 0.011480416655540466,
+      "p90_elapsed_hours": 2.6137163055671553,
+      "total_elapsed_hours": 3543.0785241640274,
+      "training_count": 4069,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "O_DECLINED",
+      "count": 60,
+      "median_elapsed_hours": 39.57854458332062,
+      "p90_elapsed_hours": 124.4570474167135,
+      "total_elapsed_hours": 3382.0042725000117,
+      "training_count": 112,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "A_APPROVED",
+      "count": 45,
+      "median_elapsed_hours": 73.65038555555873,
+      "p90_elapsed_hours": 143.54017361112437,
+      "total_elapsed_hours": 3296.226804722018,
+      "training_count": 104,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "O_SENT_BACK",
+      "count": 58,
+      "median_elapsed_hours": 27.18942652775182,
+      "p90_elapsed_hours": 120.26158755554094,
+      "total_elapsed_hours": 3000.2268505552743,
+      "training_count": 91,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "W_Valideren aanvraag",
+      "count": 276,
+      "median_elapsed_hours": 1.9246590277883742,
+      "p90_elapsed_hours": 26.287351666655805,
+      "total_elapsed_hours": 2959.103947500123,
+      "training_count": 433,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "W_Completeren aanvraag",
+      "count": 507,
+      "median_elapsed_hours": 3.0615622222423555,
+      "p90_elapsed_hours": 16.699419388877025,
+      "total_elapsed_hours": 2836.745724721948,
+      "training_count": 892,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PREACCEPTED",
+      "target": "A_ACCEPTED",
+      "count": 500,
+      "median_elapsed_hours": 0.890925416648388,
+      "p90_elapsed_hours": 18.81187194448048,
+      "total_elapsed_hours": 2812.258476389713,
+      "training_count": 1061,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "A_DECLINED",
+      "count": 59,
+      "median_elapsed_hours": 26.999701388875643,
+      "p90_elapsed_hours": 104.29549561113785,
+      "total_elapsed_hours": 2708.0575080555677,
+      "training_count": 123,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PARTLYSUBMITTED",
+      "target": "A_DECLINED",
+      "count": 1556,
+      "median_elapsed_hours": 0.011152361101574366,
+      "p90_elapsed_hours": 3.587779722213745,
+      "total_elapsed_hours": 2652.165201944643,
+      "training_count": 3735,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "A_DECLINED",
+      "count": 209,
+      "median_elapsed_hours": 1.9444066666894488,
+      "p90_elapsed_hours": 25.03087083333074,
+      "total_elapsed_hours": 2458.562321387728,
+      "training_count": 470,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 618,
+      "median_elapsed_hours": 1.7140073611007796,
+      "p90_elapsed_hours": 6.179502499984378,
+      "total_elapsed_hours": 1890.750884444846,
+      "training_count": 1054,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "A_ACTIVATED",
+      "count": 23,
+      "median_elapsed_hours": 71.0391600000196,
+      "p90_elapsed_hours": 130.60330449999705,
+      "total_elapsed_hours": 1422.5625477775602,
+      "training_count": 31,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PARTLYSUBMITTED",
+      "target": "W_Afhandelen leads",
+      "count": 222,
+      "median_elapsed_hours": 1.0491637500127156,
+      "p90_elapsed_hours": 16.226928833305838,
+      "total_elapsed_hours": 1360.8759752779536,
+      "training_count": 483,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "O_SELECTED",
+      "count": 127,
+      "median_elapsed_hours": 0.033030277755525375,
+      "p90_elapsed_hours": 25.58741688889928,
+      "total_elapsed_hours": 1231.1036030557418,
+      "training_count": 196,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "O_ACCEPTED",
+      "count": 117,
+      "median_elapsed_hours": 1.5013583333624734,
+      "p90_elapsed_hours": 20.94043627778689,
+      "total_elapsed_hours": 1006.117595277826,
+      "training_count": 273,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "A_REGISTERED",
+      "count": 14,
+      "median_elapsed_hours": 38.822947361138134,
+      "p90_elapsed_hours": 95.71079127774637,
+      "total_elapsed_hours": 725.1597858332924,
+      "training_count": 50,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PARTLYSUBMITTED",
+      "target": "W_Beoordelen fraude",
+      "count": 20,
+      "median_elapsed_hours": 17.688723611070053,
+      "p90_elapsed_hours": 82.18525258329842,
+      "total_elapsed_hours": 645.3336391664876,
+      "training_count": 45,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "O_ACCEPTED",
+      "count": 118,
+      "median_elapsed_hours": 0.547765972216924,
+      "p90_elapsed_hours": 17.189002861095798,
+      "total_elapsed_hours": 611.415826944444,
+      "training_count": 262,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "A_ACCEPTED",
+      "count": 164,
+      "median_elapsed_hours": 0.9124102778236072,
+      "p90_elapsed_hours": 9.165193277756376,
+      "total_elapsed_hours": 602.5027794445223,
+      "training_count": 352,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "A_APPROVED",
+      "count": 53,
+      "median_elapsed_hours": 0.8132775000068877,
+      "p90_elapsed_hours": 39.838740277754006,
+      "total_elapsed_hours": 594.2065074999463,
+      "training_count": 115,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "O_CANCELLED",
+      "count": 42,
+      "median_elapsed_hours": 1.487058749993642,
+      "p90_elapsed_hours": 32.15167336112922,
+      "total_elapsed_hours": 578.0965516670544,
+      "training_count": 71,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PREACCEPTED",
+      "target": "A_DECLINED",
+      "count": 45,
+      "median_elapsed_hours": 4.006480277776718,
+      "p90_elapsed_hours": 20.851901111099455,
+      "total_elapsed_hours": 415.2599416667223,
+      "training_count": 114,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "A_APPROVED",
+      "count": 52,
+      "median_elapsed_hours": 1.5274493055211174,
+      "p90_elapsed_hours": 19.78549463888671,
+      "total_elapsed_hours": 404.47794472257294,
+      "training_count": 101,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "A_DECLINED",
+      "count": 24,
+      "median_elapsed_hours": 0.7103243055608537,
+      "p90_elapsed_hours": 59.735820027755345,
+      "total_elapsed_hours": 387.4872644443644,
+      "training_count": 75,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "W_Beoordelen fraude",
+      "count": 33,
+      "median_elapsed_hours": 1.0159080555703905,
+      "p90_elapsed_hours": 64.86319250002175,
+      "total_elapsed_hours": 364.8084775000148,
+      "training_count": 50,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "A_DECLINED",
+      "count": 166,
+      "median_elapsed_hours": 0.4446712500188086,
+      "p90_elapsed_hours": 5.4811791666679905,
+      "total_elapsed_hours": 333.30712694419753,
+      "training_count": 435,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PREACCEPTED",
+      "target": "A_CANCELLED",
+      "count": 35,
+      "median_elapsed_hours": 4.468208055562443,
+      "p90_elapsed_hours": 23.003913499964614,
+      "total_elapsed_hours": 305.790956111153,
+      "training_count": 99,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "O_DECLINED",
+      "count": 37,
+      "median_elapsed_hours": 1.2892344444327883,
+      "p90_elapsed_hours": 22.287433166715832,
+      "total_elapsed_hours": 299.9230811115768,
+      "training_count": 42,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "O_SELECTED",
+      "count": 38,
+      "median_elapsed_hours": 2.2091002777881092,
+      "p90_elapsed_hours": 19.21273788890575,
+      "total_elapsed_hours": 286.9833624999391,
+      "training_count": 43,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "A_DECLINED",
+      "count": 19,
+      "median_elapsed_hours": 1.6095133333735996,
+      "p90_elapsed_hours": 65.16195866665575,
+      "total_elapsed_hours": 265.1035905557871,
+      "training_count": 37,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "A_ACTIVATED",
+      "count": 27,
+      "median_elapsed_hours": 0.6670569445027246,
+      "p90_elapsed_hours": 20.048865944465014,
+      "total_elapsed_hours": 228.3726702778207,
+      "training_count": 37,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "A_ACTIVATED",
+      "count": 27,
+      "median_elapsed_hours": 2.2557125000158944,
+      "p90_elapsed_hours": 15.075058444433743,
+      "total_elapsed_hours": 187.3953624998861,
+      "training_count": 45,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "O_SELECTED",
+      "count": 20,
+      "median_elapsed_hours": 2.587280555566152,
+      "p90_elapsed_hours": 22.07774291668339,
+      "total_elapsed_hours": 178.2546808332867,
+      "training_count": 34,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen offertes",
+      "target": "W_Completeren aanvraag",
+      "count": 3,
+      "median_elapsed_hours": 23.71033138891061,
+      "p90_elapsed_hours": 83.07316894442505,
+      "total_elapsed_hours": 137.97016805556086,
+      "training_count": 1,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "A_CANCELLED",
+      "count": 16,
+      "median_elapsed_hours": 1.0538919444547759,
+      "p90_elapsed_hours": 23.076999861167536,
+      "total_elapsed_hours": 106.3060000002384,
+      "training_count": 38,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "O_CANCELLED",
+      "count": 18,
+      "median_elapsed_hours": 0.8038218055499924,
+      "p90_elapsed_hours": 8.71538147224984,
+      "total_elapsed_hours": 104.44594472229481,
+      "training_count": 29,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "A_REGISTERED",
+      "count": 32,
+      "median_elapsed_hours": 0.542809999982516,
+      "p90_elapsed_hours": 12.897317388845835,
+      "total_elapsed_hours": 101.51060277766652,
+      "training_count": 40,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "A_CANCELLED",
+      "count": 18,
+      "median_elapsed_hours": 3.673718749980132,
+      "p90_elapsed_hours": 14.630936833335296,
+      "total_elapsed_hours": 99.92432750006517,
+      "training_count": 42,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "A_PREACCEPTED",
+      "count": 126,
+      "median_elapsed_hours": 0.15927999999788073,
+      "p90_elapsed_hours": 2.649489722218778,
+      "total_elapsed_hours": 99.7859372225735,
+      "training_count": 221,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "A_DECLINED",
+      "count": 18,
+      "median_elapsed_hours": 0.5486394444770283,
+      "p90_elapsed_hours": 11.22298638892175,
+      "total_elapsed_hours": 86.81937638905312,
+      "training_count": 46,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "A_CANCELLED",
+      "count": 5,
+      "median_elapsed_hours": 5.125889722241296,
+      "p90_elapsed_hours": 44.35884527775977,
+      "total_elapsed_hours": 82.25820861114397,
+      "training_count": 3,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "O_DECLINED",
+      "count": 27,
+      "median_elapsed_hours": 0.49371749997138975,
+      "p90_elapsed_hours": 12.210386055562237,
+      "total_elapsed_hours": 73.75240666680865,
+      "training_count": 69,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Nabellen incomplete dossiers",
+      "target": "A_REGISTERED",
+      "count": 19,
+      "median_elapsed_hours": 0.9792522222465939,
+      "p90_elapsed_hours": 13.490737944457264,
+      "total_elapsed_hours": 72.05813555558522,
+      "training_count": 57,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "W_Afhandelen leads",
+      "count": 105,
+      "median_elapsed_hours": 0.1326833333571752,
+      "p90_elapsed_hours": 1.1705818889008635,
+      "total_elapsed_hours": 64.50891277756956,
+      "training_count": 232,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "W_Beoordelen fraude",
+      "count": 10,
+      "median_elapsed_hours": 0.03439736114607917,
+      "p90_elapsed_hours": 6.223827611068863,
+      "total_elapsed_hours": 60.82172055562337,
+      "training_count": 20,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Afhandelen leads",
+      "target": "W_Beoordelen fraude",
+      "count": 7,
+      "median_elapsed_hours": 3.479898888866107,
+      "p90_elapsed_hours": 18.44165405556891,
+      "total_elapsed_hours": 60.72113305555449,
+      "training_count": 12,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACCEPTED",
+      "target": "O_SELECTED",
+      "count": 848,
+      "median_elapsed_hours": 0.04873319443729189,
+      "p90_elapsed_hours": 0.11542358333534665,
+      "total_elapsed_hours": 51.24316055509779,
+      "training_count": 1647,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACCEPTED",
+      "target": "A_FINALIZED",
+      "count": 662,
+      "median_elapsed_hours": 0.05496555556853612,
+      "p90_elapsed_hours": 0.11325497221946715,
+      "total_elapsed_hours": 42.70241555465593,
+      "training_count": 1134,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Completeren aanvraag",
+      "target": "A_FINALIZED",
+      "count": 8,
+      "median_elapsed_hours": 0.7427201388941871,
+      "p90_elapsed_hours": 2.2767953055302295,
+      "total_elapsed_hours": 8.898156666689449,
+      "training_count": 9,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "W_Afhandelen leads",
+      "count": 8,
+      "median_elapsed_hours": 0.8792797222402361,
+      "p90_elapsed_hours": 1.2601133610804875,
+      "total_elapsed_hours": 6.45989416665501,
+      "training_count": 9,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACCEPTED",
+      "target": "W_Completeren aanvraag",
+      "count": 29,
+      "median_elapsed_hours": 0.11739611109097799,
+      "p90_elapsed_hours": 0.35548933332496213,
+      "total_elapsed_hours": 5.048707222077582,
+      "training_count": 36,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "W_Valideren aanvraag",
+      "count": 6,
+      "median_elapsed_hours": 0.4348091666566001,
+      "p90_elapsed_hours": 1.176035416689184,
+      "total_elapsed_hours": 3.652768333355586,
+      "training_count": 17,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SELECTED",
+      "target": "O_CREATED",
+      "count": 992,
+      "median_elapsed_hours": 0.0003673611084620158,
+      "p90_elapsed_hours": 0.013203138887882233,
+      "total_elapsed_hours": 1.9086733338567945,
+      "training_count": 1642,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "A_PREACCEPTED",
+      "count": 1,
+      "median_elapsed_hours": 1.845173611111111,
+      "p90_elapsed_hours": 1.845173611111111,
+      "total_elapsed_hours": 1.845173611111111,
+      "training_count": 3,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "A_FINALIZED",
+      "target": "O_CREATED",
+      "count": 859,
+      "median_elapsed_hours": 0.0003594444195429484,
+      "p90_elapsed_hours": 0.007037666718165108,
+      "total_elapsed_hours": 1.4498747228251563,
+      "training_count": 1660,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "O_ACCEPTED",
+      "count": 2,
+      "median_elapsed_hours": 0.5319337499803967,
+      "p90_elapsed_hours": 0.5494789722098244,
+      "total_elapsed_hours": 1.0638674999607933,
+      "training_count": 1,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "A_ACCEPTED",
+      "target": "A_DECLINED",
+      "count": 8,
+      "median_elapsed_hours": 0.018225694431198966,
+      "p90_elapsed_hours": 0.3676145833267105,
+      "total_elapsed_hours": 0.9838258332014083,
+      "training_count": 17,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACCEPTED",
+      "target": "A_CANCELLED",
+      "count": 17,
+      "median_elapsed_hours": 0.03242361115084754,
+      "p90_elapsed_hours": 0.09334133333630033,
+      "total_elapsed_hours": 0.932749444577429,
+      "training_count": 29,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT",
+      "target": "W_Completeren aanvraag",
+      "count": 1529,
+      "median_elapsed_hours": 0.0004441666603088379,
+      "p90_elapsed_hours": 0.0007253333462609186,
+      "total_elapsed_hours": 0.7692344457573361,
+      "training_count": 2803,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "A_APPROVED",
+      "count": 1,
+      "median_elapsed_hours": 0.7400886111127005,
+      "p90_elapsed_hours": 0.7400886111127005,
+      "total_elapsed_hours": 0.7400886111127005,
+      "training_count": 0,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Afhandelen leads",
+      "count": 586,
+      "median_elapsed_hours": 0.0009763889180289374,
+      "p90_elapsed_hours": 0.0013229166799121432,
+      "total_elapsed_hours": 0.6529102778434754,
+      "training_count": 1638,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_SUBMITTED",
+      "target": "A_PARTLYSUBMITTED",
+      "count": 3926,
+      "median_elapsed_hours": 7.638891537984212e-05,
+      "p90_elapsed_hours": 0.0003188888563050164,
+      "total_elapsed_hours": 0.6473097227679359,
+      "training_count": 8332,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACTIVATED",
+      "target": "W_Valideren aanvraag",
+      "count": 254,
+      "median_elapsed_hours": 0.0021784722473886277,
+      "p90_elapsed_hours": 0.0026248611211776734,
+      "total_elapsed_hours": 0.5555766667260064,
+      "training_count": 576,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT_BACK",
+      "target": "W_Nabellen offertes",
+      "count": 962,
+      "median_elapsed_hours": 0.0004750000105963813,
+      "p90_elapsed_hours": 0.000730277763472663,
+      "total_elapsed_hours": 0.5036586095889409,
+      "training_count": 1868,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Beoordelen fraude",
+      "target": "A_ACTIVATED",
+      "count": 1,
+      "median_elapsed_hours": 0.37798277775446576,
+      "p90_elapsed_hours": 0.37798277775446576,
+      "total_elapsed_hours": 0.37798277775446576,
+      "training_count": 0,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Completeren aanvraag",
+      "count": 330,
+      "median_elapsed_hours": 0.000978055563237932,
+      "p90_elapsed_hours": 0.0012863888409402637,
+      "total_elapsed_hours": 0.3436400005552504,
+      "training_count": 775,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_REGISTERED",
+      "target": "W_Valideren aanvraag",
+      "count": 154,
+      "median_elapsed_hours": 0.002166111105018192,
+      "p90_elapsed_hours": 0.0025679721964730158,
+      "total_elapsed_hours": 0.33395027763313717,
+      "training_count": 387,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_PREACCEPTED",
+      "target": "W_Afhandelen leads",
+      "count": 758,
+      "median_elapsed_hours": 0.0003483333190282186,
+      "p90_elapsed_hours": 0.000633222222328186,
+      "total_elapsed_hours": 0.3085297228892644,
+      "training_count": 1462,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "O_CREATED",
+      "count": 290,
+      "median_elapsed_hours": 0.0003608333402209812,
+      "p90_elapsed_hours": 0.0007335278060701166,
+      "total_elapsed_hours": 0.2851963892247942,
+      "training_count": 460,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT",
+      "target": "W_Nabellen offertes",
+      "count": 485,
+      "median_elapsed_hours": 0.0004863888687557644,
+      "p90_elapsed_hours": 0.0007786666817135282,
+      "total_elapsed_hours": 0.2628152768479453,
+      "training_count": 770,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "W_Valideren aanvraag",
+      "target": "O_SENT_BACK",
+      "count": 5,
+      "median_elapsed_hours": 0.021213055517938402,
+      "p90_elapsed_hours": 0.08925538892216153,
+      "total_elapsed_hours": 0.21580111112859515,
+      "training_count": 1,
+      "rare_or_unseen": true
+    },
+    {
+      "source": "A_APPROVED",
+      "target": "W_Valideren aanvraag",
+      "count": 78,
+      "median_elapsed_hours": 0.002138750023312039,
+      "p90_elapsed_hours": 0.00256166668732961,
+      "total_elapsed_hours": 0.16746416668097178,
+      "training_count": 159,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_ACCEPTED",
+      "target": "W_Valideren aanvraag",
+      "count": 65,
+      "median_elapsed_hours": 0.002109444472524855,
+      "p90_elapsed_hours": 0.002475277794731988,
+      "total_elapsed_hours": 0.13734694461027783,
+      "training_count": 125,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_CANCELLED",
+      "target": "W_Completeren aanvraag",
+      "count": 241,
+      "median_elapsed_hours": 0.000477222204208374,
+      "p90_elapsed_hours": 0.0007933333184983995,
+      "total_elapsed_hours": 0.12946166694164277,
+      "training_count": 487,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Valideren aanvraag",
+      "count": 99,
+      "median_elapsed_hours": 0.0011797222163942125,
+      "p90_elapsed_hours": 0.0015403888490464954,
+      "total_elapsed_hours": 0.12044388810793559,
+      "training_count": 191,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_DECLINED",
+      "target": "W_Valideren aanvraag",
+      "count": 86,
+      "median_elapsed_hours": 0.0011173611217074925,
+      "p90_elapsed_hours": 0.0014772222439448039,
+      "total_elapsed_hours": 0.10011250032318965,
+      "training_count": 197,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_CANCELLED",
+      "target": "W_Nabellen offertes",
+      "count": 117,
+      "median_elapsed_hours": 0.0006636110941569011,
+      "p90_elapsed_hours": 0.0010949444373448691,
+      "total_elapsed_hours": 0.08479805588722229,
+      "training_count": 296,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "W_Nabellen offertes",
+      "count": 119,
+      "median_elapsed_hours": 0.0006477777825461494,
+      "p90_elapsed_hours": 0.000949277745352851,
+      "total_elapsed_hours": 0.08093166642718844,
+      "training_count": 330,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACTIVATED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 33,
+      "median_elapsed_hours": 0.0021538889408111573,
+      "p90_elapsed_hours": 0.002621500028504266,
+      "total_elapsed_hours": 0.07622916671964856,
+      "training_count": 44,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_REGISTERED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 16,
+      "median_elapsed_hours": 0.00219763888253106,
+      "p90_elapsed_hours": 0.002520000007417467,
+      "total_elapsed_hours": 0.04036611113283369,
+      "training_count": 35,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 62,
+      "median_elapsed_hours": 0.0006363888912730748,
+      "p90_elapsed_hours": 0.0008353055848015679,
+      "total_elapsed_hours": 0.03964361131191255,
+      "training_count": 85,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT_BACK",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 63,
+      "median_elapsed_hours": 0.0005752778053283691,
+      "p90_elapsed_hours": 0.0008596666786405776,
+      "total_elapsed_hours": 0.038493333591355226,
+      "training_count": 92,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SENT",
+      "target": "W_Valideren aanvraag",
+      "count": 65,
+      "median_elapsed_hours": 0.0005486110846201578,
+      "p90_elapsed_hours": 0.0007968888680140177,
+      "total_elapsed_hours": 0.03802194423145718,
+      "training_count": 104,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CREATED",
+      "target": "O_SENT",
+      "count": 2141,
+      "median_elapsed_hours": 9.722246064080132e-06,
+      "p90_elapsed_hours": 2.1666685740152994e-05,
+      "total_elapsed_hours": 0.03483388774924808,
+      "training_count": 3762,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 21,
+      "median_elapsed_hours": 0.0012341666883892482,
+      "p90_elapsed_hours": 0.0015116667085223728,
+      "total_elapsed_hours": 0.025490555365880328,
+      "training_count": 22,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_APPROVED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 8,
+      "median_elapsed_hours": 0.002444999979601966,
+      "p90_elapsed_hours": 0.0027744444343778822,
+      "total_elapsed_hours": 0.019529444310400223,
+      "training_count": 13,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 19,
+      "median_elapsed_hours": 0.0007802777820163303,
+      "p90_elapsed_hours": 0.0010628333224190604,
+      "total_elapsed_hours": 0.015804166595141094,
+      "training_count": 37,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_ACCEPTED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 6,
+      "median_elapsed_hours": 0.00236458334657881,
+      "p90_elapsed_hours": 0.0027686111132303876,
+      "total_elapsed_hours": 0.014094722204738192,
+      "training_count": 12,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_CANCELLED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 15,
+      "median_elapsed_hours": 0.0006794444719950358,
+      "p90_elapsed_hours": 0.0009804444180594551,
+      "total_elapsed_hours": 0.011183611088328892,
+      "training_count": 27,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Beoordelen fraude",
+      "count": 13,
+      "median_elapsed_hours": 0.0007411111063427395,
+      "p90_elapsed_hours": 0.0009431111150317723,
+      "total_elapsed_hours": 0.010202222334014044,
+      "training_count": 44,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_DECLINED",
+      "target": "W_Nabellen incomplete dossiers",
+      "count": 9,
+      "median_elapsed_hours": 0.0010619444317287868,
+      "p90_elapsed_hours": 0.0011906666623221504,
+      "total_elapsed_hours": 0.009588055478201973,
+      "training_count": 24,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_DECLINED",
+      "target": "W_Nabellen offertes",
+      "count": 8,
+      "median_elapsed_hours": 0.0010302777422799005,
+      "p90_elapsed_hours": 0.0011865555644035338,
+      "total_elapsed_hours": 0.008446111016803318,
+      "training_count": 17,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "W_Valideren aanvraag",
+      "count": 5,
+      "median_elapsed_hours": 0.0008491666449440851,
+      "p90_elapsed_hours": 0.001046555585331387,
+      "total_elapsed_hours": 0.004296666714880202,
+      "training_count": 5,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "W_Nabellen offertes",
+      "count": 4,
+      "median_elapsed_hours": 0.0009979166587193809,
+      "p90_elapsed_hours": 0.0010493055515819125,
+      "total_elapsed_hours": 0.003974444468816121,
+      "training_count": 15,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_CANCELLED",
+      "target": "W_Valideren aanvraag",
+      "count": 2,
+      "median_elapsed_hours": 0.0007284722394413418,
+      "p90_elapsed_hours": 0.00088613889614741,
+      "total_elapsed_hours": 0.0014569444788826837,
+      "training_count": 10,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SELECTED",
+      "target": "A_FINALIZED",
+      "count": 859,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.777576446533203e-07,
+      "total_elapsed_hours": 6.249970859951443e-05,
+      "training_count": 1660,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_ACCEPTED",
+      "target": "A_REGISTERED",
+      "count": 212,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.778238720364041e-07,
+      "total_elapsed_hours": 3.055532773335775e-05,
+      "training_count": 467,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_ACCEPTED",
+      "target": "A_ACTIVATED",
+      "count": 159,
+      "median_elapsed_hours": 2.777576446533203e-07,
+      "p90_elapsed_hours": 2.778238720364041e-07,
+      "total_elapsed_hours": 2.8611355357699925e-05,
+      "training_count": 345,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_APPROVED",
+      "target": "A_ACTIVATED",
+      "count": 196,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.777576446533203e-07,
+      "total_elapsed_hours": 1.6666584544711642e-05,
+      "training_count": 496,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_APPROVED",
+      "target": "A_REGISTERED",
+      "count": 192,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.777576446533203e-07,
+      "total_elapsed_hours": 1.3888941870795356e-05,
+      "training_count": 401,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_ACCEPTED",
+      "target": "A_APPROVED",
+      "count": 172,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.777576446533203e-07,
+      "total_elapsed_hours": 1.1111100514729817e-05,
+      "training_count": 401,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "O_SELECTED",
+      "count": 322,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 2.777576446533203e-07,
+      "total_elapsed_hours": 9.721981154547798e-06,
+      "training_count": 499,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_REGISTERED",
+      "target": "A_ACTIVATED",
+      "count": 181,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 4.444254769219293e-06,
+      "training_count": 398,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_CANCELLED",
+      "target": "O_CANCELLED",
+      "count": 193,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 2.5000837114122178e-06,
+      "training_count": 520,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_DECLINED",
+      "target": "O_DECLINED",
+      "count": 103,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 1.6666120953030057e-06,
+      "training_count": 238,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_FINALIZED",
+      "target": "O_SELECTED",
+      "count": 670,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 1143,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_CANCELLED",
+      "target": "A_CANCELLED",
+      "count": 175,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 460,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACTIVATED",
+      "target": "A_APPROVED",
+      "count": 131,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 287,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_SELECTED",
+      "target": "O_CANCELLED",
+      "count": 290,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 460,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACTIVATED",
+      "target": "A_REGISTERED",
+      "count": 145,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 336,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_ACTIVATED",
+      "target": "O_ACCEPTED",
+      "count": 51,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 109,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_REGISTERED",
+      "target": "A_APPROVED",
+      "count": 160,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 344,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_APPROVED",
+      "target": "O_ACCEPTED",
+      "count": 140,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 283,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "A_REGISTERED",
+      "target": "O_ACCEPTED",
+      "count": 103,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 187,
+      "rare_or_unseen": false
+    },
+    {
+      "source": "O_DECLINED",
+      "target": "A_DECLINED",
+      "count": 124,
+      "median_elapsed_hours": 0.0,
+      "p90_elapsed_hours": 0.0,
+      "total_elapsed_hours": 0.0,
+      "training_count": 228,
+      "rare_or_unseen": false
+    }
+  ],
+  "lifecycle_audit": {
+    "unmatched_work_completions": 1047,
+    "starts_without_schedule": 60920,
+    "open_starts": 10,
+    "open_schedules": 15862,
+    "ambiguous_fifo_matches": 192
+  },
+  "matched_service_intervals": [
+    {
+      "activity": "W_Completeren aanvraag",
+      "count": 23508,
+      "mean_hours": 0.17024767166750185,
+      "median_hours": 0.04457013888491525,
+      "p90_hours": 0.22260083334975772,
+      "total_hours": 4002.1822655596334
+    },
+    {
+      "activity": "W_Nabellen offertes",
+      "count": 22404,
+      "mean_hours": 0.15523032714870905,
+      "median_hours": 0.02808472222752041,
+      "p90_hours": 0.10266300001409323,
+      "total_hours": 3477.7802494396774
+    },
+    {
+      "activity": "W_Valideren aanvraag",
+      "count": 7888,
+      "mean_hours": 0.34910471908876606,
+      "median_hours": 0.20064152780506345,
+      "p90_hours": 0.6107787500023842,
+      "total_hours": 2753.7380241721867
+    },
+    {
+      "activity": "W_Nabellen incomplete dossiers",
+      "count": 11399,
+      "mean_hours": 0.2123775644792308,
+      "median_hours": 0.035165833301014374,
+      "p90_hours": 0.23752122222052685,
+      "total_hours": 2420.891857498752
+    },
+    {
+      "activity": "W_Afhandelen leads",
+      "count": 5897,
+      "mean_hours": 0.28239875440439366,
+      "median_hours": 0.03182444446616703,
+      "p90_hours": 0.14087555554178044,
+      "total_hours": 1665.3054547227093
+    },
+    {
+      "activity": "W_Beoordelen fraude",
+      "count": 270,
+      "mean_hours": 0.1545579331276839,
+      "median_hours": 0.0024730555547608267,
+      "p90_hours": 0.01672872222794426,
+      "total_hours": 41.730641944474655
+    }
+  ],
+  "matched_schedule_to_start_waits": [
+    {
+      "activity": "W_Nabellen offertes",
+      "count": 4909,
+      "mean_hours": 51.84438058492385,
+      "median_hours": 0.008711944421132406,
+      "p90_hours": 188.85301938892735,
+      "total_hours": 254504.06429139117
+    },
+    {
+      "activity": "W_Completeren aanvraag",
+      "count": 2764,
+      "mean_hours": 17.660558477347713,
+      "median_hours": 2.52111124995682,
+      "p90_hours": 35.606508166670814,
+      "total_hours": 48813.78363138908
+    },
+    {
+      "activity": "W_Nabellen incomplete dossiers",
+      "count": 1223,
+      "mean_hours": 28.60028296788425,
+      "median_hours": 0.6804280555910535,
+      "p90_hours": 93.22803055552642,
+      "total_hours": 34978.14606972244
+    },
+    {
+      "activity": "W_Valideren aanvraag",
+      "count": 845,
+      "mean_hours": 39.13939297435865,
+      "median_hours": 2.417134444448683,
+      "p90_hours": 119.46720161110825,
+      "total_hours": 33072.78706333306
+    },
+    {
+      "activity": "W_Afhandelen leads",
+      "count": 704,
+      "mean_hours": 6.688542347697052,
+      "median_hours": 0.9275630555550257,
+      "p90_hours": 20.893219444420623,
+      "total_hours": 4708.733812778724
+    },
+    {
+      "activity": "W_Beoordelen fraude",
+      "count": 11,
+      "mean_hours": 7.984881136357183,
+      "median_hours": 0.00438749995496538,
+      "p90_hours": 22.13740000002914,
+      "total_hours": 87.83369249992901
+    }
+  ],
+  "handoff_groups": [
+    {
+      "handoffs": "0",
+      "resolved_cases": 3563,
+      "median_resolution_hours": 0.010590277777777778
+    },
+    {
+      "handoffs": "1-5",
+      "resolved_cases": 6148,
+      "median_resolution_hours": 20.325678611132833
+    },
+    {
+      "handoffs": "6+",
+      "resolved_cases": 2977,
+      "median_resolution_hours": 521.7275638888942
+    }
+  ],
+  "handoff_duration_association": {
+    "spearman_r": 0.9188426021074272,
+    "p": 0.0,
+    "interpretation": "Descriptive association among resolved cases, not a causal effect of handoffs"
+  },
+  "limitations": "Completion-to-completion gaps are elapsed time, not pure waiting. FIFO lifecycle pairing is approximate without activity-instance IDs. Repeated work can be legitimate; rare paths are not automatically violations. Observational data do not establish what intervention would reduce delay.",
+  "policy_overrides": {},
+  "data_quality": {
+    "events": 262200,
+    "missing_resource": 18010,
+    "originally_out_of_order_traces": 0
+  }
+}

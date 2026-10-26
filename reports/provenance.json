@@ -1,0 +1,29 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "__init__.py": "e9067a43939a3dc0a83f5a563fbc233ee968abf05c2e878b3f986515d82cb94e",
+    "cli.py": "cb291848f5a75fe4e853df68cd82da30243c396b5c0b2d23ea493bb645bf0de0",
+    "core.py": "a4b45596ca8de55bc06322f5002d9483adeac1dc3430b407af83f0372038dfa3",
+    "fetch_data.py": "35664e697ef8e9e8286da9550a8f01d55c2b2b11d89aa311866dad52ecb975ef",
+    "io.py": "afa1c99fdb182e7bfd8ca8e20e2a80b8085d54615b1f367251dae920ade90b7b",
+    "provenance.py": "a154e9d009a7f6c91d3cccebc1a80146f1667acf14876faaa9b1b364a05b0e5e"
+  },
+  "data": {
+    "name": "BPI Challenge 2012",
+    "creator": "Boudewijn van Dongen, Eindhoven University of Technology",
+    "url": "https://ndownloader.figshare.com/files/24027287",
+    "filename": "BPI_Challenge_2012.xes.gz",
+    "fallback": "https://raw.githubusercontent.com/gianmarchioni/MSc_Projects-BPM_LSTM/main/BPI_Challenge_2012.xes.gz",
+    "sha256": "5cd9cc16b9bcb20bd4aae45666a5d87479ddbf47e6371618b6ad217174cecdf3",
+    "publisher_md5": "74c7ba9aba85bfcb181a22c9d565e5b5",
+    "license": "4TU General Terms of Use; raw data excluded from this repository",
+    "doi": "10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f",
+    "metadata_url": "https://api.figshare.com/v2/articles/12689204",
+    "retrieval_note": "Official file timed out; local evaluation used a mirror matching the original publisher MD5 and pinned SHA256."
+  }
+}
