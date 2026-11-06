@@ -1,5 +1,7 @@
 # ProcessLens
 
+ProcessLens turns time-stamped records into a map of how work actually moves through a process. Use it to see where loan applications wait, repeat steps, or take an unusual route.
+
 Process mining over a real loan-application event log: discover observed paths, identify repeated work, examine elapsed-time concentrations and review deviations. Algorithms and reports are provided as a Python package and CLI.
 
 ## Implemented
